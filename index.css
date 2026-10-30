@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+}
+
+.box {
+    padding: 2%;
+    width: 12%;
+    height: 10vh;
+}
+
+.box {
+    padding: 4%;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    border-radius: 4%;
+}
+
+.b1 {
+    background-color: teal;
+
+}
+
+.b2 {
+    background-color: blue;
+}
+
+.b3 {
+    background-color: red;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    padding: 2%;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 8%;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar span {
+    color: #fff;
+}
+
+.main-container {
+    display: flex;
+    gap: 4%;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: blue;
+    width: 200px;
+    flex-shrink: 0;
+    height: 100vh;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin: 6% 0 0 8%;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar ul span {
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    overflow-y: auto;
+}
+
+.boxes {
+    display: flex;
+    gap: 1%;
+}
+
+.table {
+    margin-top: 4%;
+}
+
+.table table {
+    width: 100%;
+    padding: 4%;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 2%;
+}
+
+
+@media (max-width: 425px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 4%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-visible {
+        display: block;
+    }
+
+    .boxes {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .box {
+        margin: 0 0 2% 0;
+        width: 80%;
+        height: 20vh;
+    }
+
+    .table {
+        overflow-x: scroll;
+        margin-left: 4%;
+    }
+
+}
+
+@media (min-width: 426px) {
+    .navbar #harmbuger {
+        display: none;
+    }
+}

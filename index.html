@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Menu</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <span style="display: flex; gap: 4px;">
+                    <span class="fa-solid fa-home"></span>
+                    <li>Home</li>
+                </span>
+
+                <span style="display: flex; gap: 4px;">
+                    <span class="fa-solid fa-book"></span>
+                    <li>About</li>
+                </span>
+
+                <span style="display: flex; gap: 4px;">
+                    <span class="fa-solid fa-cogs"></span>
+                    <li>Settings</li>
+                </span>
+            </ul>
+
+            <span id="harmbuger" class="fa-solid fa-bars"></span>
+        </div>
+
+        <div class="main-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <span style="display: flex; gap: 4px; align-items: center;">
+                        <span class="fa-solid fa-receipt"></span>
+                        <li>Transactions</li>
+                    </span>
+
+                    <span style="display: flex; gap: 4px; align-items: center;">
+                        <span class="fa-solid fa-cart-shopping"></span>
+                        <li>Orders</li>
+                    </span>
+
+                    <span style="display: flex; gap: 4px; align-items: center;">
+                        <span class="fa-solid fa-book"></span>
+                        <li>Audit logs</li>
+                    </span>
+
+                    <span style="display: flex; gap: 4px; align-items: center;">
+                        <span class="fa-solid fa-right-from-bracket"></span>
+                        <li>Logout</li>
+                    </span>
+                </ul>
+            </div>
+
+            <!-- Main -->
+            <div class="main">
+                <div class="boxes">
+                    <div class="box b1">
+                        <span style="display: flex; gap: 4px; align-items: center;">
+                            <span class="fa-solid fa-receipt"></span>
+                            <h3>Transactions</h3>
+                        </span>
+                        <p>199</p>
+                    </div>
+
+                    <div class="box b2">
+                        <span style="display: flex; gap: 4px; align-items: center;">
+                            <span class="fa-solid fa-users"></span>
+                            <h3>Users</h3>
+                        </span>
+                        <p>200</p>
+                    </div>
+
+                    <div class="box b3">
+                        <span style="display: flex; gap: 4px; align-items: center;">
+                            <span class="fa-solid fa-cart-shopping"></span>
+                            <h3>Orders</h3>
+                        </span>
+                        <p>53</p>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="table">
+                    <h2 style="font-size: 19px; margin-bottom: 2%;">Recent Orders</h2>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Order id</th>
+                                <th>Username</th>
+                                <th>Phone</th>
+                                <th>Order</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>123</td>
+                                <td>Usama</td>
+                                <td>09088997765</td>
+                                <td>iPhone 17 pro</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>1245</td>
+                                <td>Ahmad</td>
+                                <td>09099373833</td>
+                                <td>iPhone 17</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>2343</td>
+                                <td>Usman</td>
+                                <td>090889765</td>
+                                <td>infinix hot 40i</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>5643</td>
+                                <td>Abdullahi</td>
+                                <td>09088997765</td>
+                                <td>Earpod</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
